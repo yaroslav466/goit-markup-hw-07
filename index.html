@@ -14,14 +14,11 @@
 </head>
 <body>
     <header class="page-header">
-        <div class="container flexing">
-            
+        <div class="container flexing">     
             <nav class="page-navigation">
                 <a class="logo link" href="./index.html">Web<span class="logo-studio">Studio</span>
                 </a>
-                
-                    
-                    <div class="menu-container">
+                   <div class="menu-container">
                         <ul class="menu list">
                             <li class="menu-item">
                                 <a class="menu-link-current link" href="./index.html">Studio</a>
@@ -46,14 +43,15 @@
                                 </li>
                             </ul>
                             </div>
-                        </address>    
-                    <div class="mobile-menu-open js-open-menu">
-                        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                        </address> 
+                        <div class="mobile-menu-close">
+                             <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                             <svg class="menu-hamburger" width="32" height="22">
                                 <use href="./images/icons.svg#icon-hamburger"></use>
                             </svg>
                         </button>
-                    </div>
+                        </div> 
+                       
             </div>
         </header>
 
@@ -70,24 +68,61 @@
                 <h2 class="visually-hidden">Advantages</h2>
                 <ul class="studio-wrp list">
                     <li class="studio-item">
+                        <div class="studio-icon-wrp">
+                            <svg class="studio-icon" width="64" height="64">
+                                <use href="./images/icons.svg#icon-antenna-1"></use>
+                            </svg>
+                        </div>
                         <h3 class="studio-item-title">Strategy</h3>
                         <p class="studio-descr">Our goal is to identify the business problem to walk away with the perfect and
                             creative solution.</p>
                     </li>
                     <li class="studio-item">
+                        <div class="studio-icon-wrp">
+                            <svg class="studio-icon" width="64" height="64">
+                                <use href="./images/icons.svg#icon-clock-1"></use>
+                            </svg>
+                        </div>
                         <h3 class="studio-item-title">Punctuality</h3>
                         <p class="studio-descr">Bring the key message to the brand's audience for the best price within the
                             shortest possible time.</p>
                     </li>
                     <li class="studio-item">
+                        <div class="studio-icon-wrp">
+                            <svg class="studio-icon" width="64" height="64">
+                                <use href="./images/icons.svg#icon-diagram-1"></use>
+                            </svg>
+                        </div>
                         <h3 class="studio-item-title">Diligence</h3>
                         <p class="studio-descr">Research and confirm brands that present the strongest digital growth
                             opportunities and minimize risk.</p>
                     </li>
                     <li class="studio-item">
+                        <div class="studio-icon-wrp">
+                            <svg class="studio-icon" width="64" height="64">
+                                <use href="./images/icons.svg#icon-astronaut-1"></use>
+                            </svg>
+                        </div>
                         <h3 class="studio-item-title">Technologies</h3>
                         <p class="studio-descr">Design practice focused on digital experiences. We bring forth a deep passion
                             for problem-solving.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="container">
+                <h2 class="work-title">What are we doing</h2>
+                <ul class="work-wrp list">
+                    <li class="work-item">
+                        <img class="work-img" src="./images/computer.jpg" alt="computer" width="360" height="300">
+                    </li>
+                    <li class="work-item">
+                        <img class="work-img" src="./images/phone.jpg" alt="phone" width="360" height="300">
+                    </li>
+                    <li class="work-item">
+                        <img class="work-img" src="./images/table.jpg" alt="working place" width="360" height="300">
                     </li>
                 </ul>
             </div>
@@ -422,37 +457,64 @@
     </div>
 </div>
 
-<div class="mobile-menu js-menu-container" id="mobile-menu">
-    <div class="container">
-        <button class="menu-toggle js-close-menu">
-            <svg class="close-icon" width="8" height="8">
+<div class="mobile-menu js-menu-container">
+    <div class="container container-mobile-menu">
+        <button class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
-        <ul class="mobile-menu list">
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-link-current link" href="./index.html">Studio</a>
+        <ul class="list mobile-menu-list">
+            <li>
+                <a class="link mobile-menu-link mobile-menu-link-studio" href="./index.html">Studio</a>
             </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+            <li>
+                <a class="link mobile-menu-link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-link link" href="">Contacts</a>
-            </li>
+            <li><a class="link mobile-menu-link" href="#">Contacts</a></li>
         </ul>
-        </nav>
-        <address class="mobile-menu-contacts">
-            <ul class="mobile-menu-contacts list">
-                <li class="mobile-menu-contacts-item">
-                    <a class="mobile-menu-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <address class="mobile-address">
+            <ul class="list list-mobile-addres">
+                <li class="list-mobile-addres-item">
+                    <a class="link link-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
                 </li>
-                <li class="mobile-menu-contacts-item">
-                    <a class="mobile-menu-contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                <li class="list-mobile-addres-item">
+                    <a class="link link-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
             </ul>
         </address>
+        <ul class="list mobile-social-list">
+            <li class="mobile-social-item">
+                <a href="" class="mobile-social-media-link">
+                    <svg class="mobile-social-media-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-social-item">
+                <a href="" class="mobile-social-media-link">
+                    <svg class="mobile-social-media-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-social-item">
+                <a href="" class="mobile-social-media-link">
+                    <svg class="mobile-social-media-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-social-item">
+                <a href="" class="mobile-social-media-link">
+                    <svg class="mobile-social-media-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
     </div>
-    </div>
+</div>
 
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu.js"></script>
