@@ -45,7 +45,7 @@
                             </div>
                         </address> 
                         <div class="mobile-menu-close">
-                             <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                             <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu-list">
                             <svg class="menu-hamburger" width="32" height="22">
                                 <use href="./images/icons.svg#icon-hamburger"></use>
                             </svg>
@@ -116,24 +116,40 @@
                 <h2 class="work-title">What are we doing</h2>
                 <ul class="work-wrp list">
                     <li class="work-item">
-                        <img class="work-img" src="./images/computer.jpg" alt="computer" width="360" height="300">
+                        <img class="work-img"
+                        srcset="
+                  ./images/computer.jpg    1x,
+                  ./images/computer2x.jpg  2x" 
+                        src="./images/computer.jpg" alt="computer" width="360" height="300">
                     </li>
                     <li class="work-item">
-                        <img class="work-img" src="./images/phone.jpg" alt="phone" width="360" height="300">
+                        <img class="work-img"
+                        srcset="
+                  ./images/phone.jpg    1x,
+                  ./images/phone2x.jpg 2x" 
+                         src="./images/phone.jpg" alt="phone" width="360" height="300">
                     </li>
                     <li class="work-item">
-                        <img class="work-img" src="./images/table.jpg" alt="working place" width="360" height="300">
+                        <img class="work-img"
+                        srcset="
+                  ./images/table.jpg    1x,
+                  ./images/table2x.jpg 2x" 
+                         src="./images/table.jpg" alt="working place" width="360" height="300">
                     </li>
                 </ul>
             </div>
         </section>
 
 <section class="contacts" id="contacts">
-    <div class="container">
+    <div class="container media">
         <h2 class="contacts-title">Our Team</h2>
         <ul class="contacts-wrp list">
             <li class="contacts-item">
-                <img class="contacts-img" src="./images/mark.jpg" alt="mark guerrero" width="264" height="260">
+                <img class="contacts-img" 
+                srcset="
+                  ./images/mark.jpg    1x,
+                  ./images/mark2x.jpg 2x" 
+                src="./images/mark.jpg" alt="mark guerrero" width="264" height="260">
                 <div class="contacts-descr">
                     <h3 class="contacts-employee">Mark Guerrero</h3>
                     <p class="contacts-job">Product Designer</p>
@@ -171,7 +187,11 @@
                 </div>
             </li>
             <li class="contacts-item">
-                <img class="contacts-img" src="./images/tom.jpg" alt="tom ford" width="264" height="260">
+                <img class="contacts-img"
+                 srcset="
+                  ./images/tom.jpg  1x,
+                  ./images/tom2x.jpg 2x" 
+                  src="./images/tom.jpg" alt="tom ford" width="264" height="260">
                 <div class="contacts-descr">
                     <h3 class="contacts-employee">Tom Ford</h3>
                     <p class="contacts-job">Frontend Developer</p>
@@ -209,7 +229,11 @@
                 </div>
             </li>
             <li class="contacts-item">
-                <img class="contacts-img" src="./images/camila.jpg" alt=" camila garcia" width="264" height="260">
+                <img class="contacts-img" 
+                srcset="
+                  ./images/camila.jpg  1x,
+                  ./images/camila2x.jpg 2x"
+                src="./images/camila.jpg" alt=" camila garcia" width="264" height="260">
                 <div class="contacts-descr">
                     <h3 class="contacts-employee">Camila Garcia</h3>
                     <p class="contacts-job">Marketing</p>
@@ -246,7 +270,11 @@
                 </div>
             </li>
             <li class="contacts-item">
-                <img class="contacts-img" src="./images/daniel.jpg" alt="daniel wilson" width="264" height="260">
+                <img class="contacts-img" 
+                srcset="
+                  ./images/daniel.jpg  1x,
+                  ./images/daniel2x.jpg 2x"
+                src="./images/daniel.jpg" alt="daniel wilson" width="264" height="260">
                 <div class="contacts-descr">
                     <h3 class="contacts-employee">Daniel Wilson</h3>
                     <p class="contacts-job">UI Designer</p>
@@ -287,7 +315,7 @@
 </section>
 
 <section class="customers">
-    <div class="container">
+    <div class="container media">
         <h2 class="customers-title">Customers</h2>
         <ul class="customers-wrp list">
             <li class="customers-item">
